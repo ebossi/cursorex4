@@ -1,0 +1,86 @@
+.game-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+.controls {
+    margin: 20px 0;
+}
+
+.controls button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.controls button:hover {
+    background-color: #0056b3;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 2px;
+    margin: 20px auto;
+    max-width: 500px;
+}
+
+.cell {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ddd;
+    border: 1px solid #999;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.cell:hover {
+    background-color: #ccc;
+}
+
+.cell.revealed {
+    background-color: #fff;
+}
+
+.cell.mine {
+    background-color: #ff4444;
+}
+
+.cell.flagged {
+    background-color: #ffcc00;
+}
+
+.game-status {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    min-height: 30px;
+}
+
+/* 숫자 색상 */
+.cell[data-value="1"] { color: blue; }
+.cell[data-value="2"] { color: green; }
+.cell[data-value="3"] { color: red; }
+.cell[data-value="4"] { color: darkblue; }
+.cell[data-value="5"] { color: darkred; }
+.cell[data-value="6"] { color: teal; }
+.cell[data-value="7"] { color: black; }
+.cell[data-value="8"] { color: gray; } 

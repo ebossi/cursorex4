@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지뢰찾기 게임</title>
+    <link rel="stylesheet" href="css/minesweeper.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>지뢰찾기</h1>
+        <div class="game-info">
+            <div class="mines-count">남은 지뢰: <span id="minesLeft">10</span></div>
+            <div class="timer">시간: <span id="timer">0</span>초</div>
+        </div>
+        <div class="controls">
+            <button id="newGame">새 게임</button>
+            <button id="backToPortfolio">포트폴리오로 돌아가기</button>
+        </div>
+        <div class="board" id="board"></div>
+        <div class="game-status" id="gameStatus"></div>
+    </div>
+    <script src="js/minesweeper.js"></script>
+</body>
+</html> 
